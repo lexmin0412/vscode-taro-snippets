@@ -1,0 +1,20 @@
+{
+  "forEach": {
+    "prefix": "fe",
+    "body": [
+      "${1:array}.forEach((item) => {",
+      "\t${2:// body}",
+      "});"
+    ],
+    "description": "创建一个forEach语句"
+  },
+  "setTimeout": {
+    "prefix": "stt",
+    "body": [
+      "setTimeout(() => {",
+      "\t${0:// body}",
+      "}, ${1:1000});"
+    ],
+    "description": "创建一个定时器"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "create a service": {
+    "prefix": "cst",
+    "body": [
+      "/**",
+      " * ${1:方法注释}",
+      " */",
+      "public ${2:serviceName}(payload: {",
+        "\t/**",
+         "\t * ${5:字段注释}",
+         "\t */",
+        "\t${6:fieldName}: ${7:string}",
+      "}): Promise<any> {",
+        "\treturn this.${3:get}( {",
+          "\t\turl: '${4:接口路由：如/live/queryLiveList}',",
+          "\t\tdata: payload,",
+        "\t} )",
+      "}"
+    ],
+    "description": "创建一个service"
+  }
+}
